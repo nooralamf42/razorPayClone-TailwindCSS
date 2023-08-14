@@ -293,7 +293,7 @@
     <section class="bg-bg">
       <div class="flex flex-col lg:flex-row max-w-[1080px] lg:w-4/5 w-[95%] gap-3 mx-auto lg:items-center">
         <!-- left div -->
-        <div class="space-y-10 min-w-[410px]">
+        <div class="space-y-10 md:min-w-[410px]">
           <h1 class="text-white text-4xl font-extrabold leading-[40px]">
             Power your finance, grow your business
           </h1>
@@ -341,7 +341,7 @@
 
     <!-- plans section -->
     <section>
-      <div class="h-[38px] w-[200px] overflow-hidden absolute ml-[150px]">
+      <div class="h-[38px] w-[200px] overflow-hidden absolute ml-[150px] hidden lg:block">
         <img
           class="object-cover object-bottom w-full h-full"
           src="https://razorpay.com/build/browser/static/dots-with-cut.bde9e78f.png"
@@ -350,27 +350,32 @@
         />
       </div>
       <img
-        class="absolute right-0 rotate-180 mt-8"
+        class="absolute right-0 rotate-180 mt-8 hidden lg:block"
         src="https://razorpay.com/build/browser/static/dots-with-cut.bde9e78f.png"
         alt=""
         srcset=""
       />
 
       <div class="max-w-[1080px] lg:w-4/5 w-[95%] mx-auto">
-        <h1 class="text-black text-3xl text-center font-semibold">
+        <h1 class="text-black text-4xl font-bold px-4 md:px-10 md:text-3xl text-center lg:font-semibold">
           Accept Payments with Razorpay Payment Suite
         </h1>
         <hr
-          class="w-5 h-1 mx-auto bg-green-400 text-green-500 border-none text-center block mt-3 mb-[80px]"
+          class="w-5 h-1 mx-auto bg-green-400 text-green-500 border-none text-center block mt-3 md:mb-[80px]"
         />
 
         <!-- inner plans div -->
         <div
-          class="flex border rounded-md w-auto mx-auto min-h-[432px] max-h-[450px] pl-10 pt-10 mt-15 overflow-hidden pb-10 relative"
+          class="flex md:border rounded-md w-auto mx-auto min-h-[432px] lg:max-h-[450px] pl-10 pt-10 mt-15 overflow-hidden pb-10 relative"
         >
+        <!-- bg image for small size -->
+        <div class="md:hidden absolute right-0 top-0 bg-gradient-to-r from-[#fafafa] to-[#fefefe] pl-8 pr-2 py-4 -z-20">
+          <img class="w-[48px] bg-sky-500 rounded-full" src="https://razorpay.com/build/browser/static/payment-gateway.ae837f84.svg" alt="" srcset="">
+        </div>
+          <img class="absolute w-[fit] md:hidden  bg-contain top-0 right-0 h-1/2 z-10" src="svg/sm-card.svg" alt="" srcset="">
           <!-- content div left div -->
-          <div class="flex flex-col space-y-6">
-            <h1 class="text-3xl font-bold max-w-[510px]">
+          <div class="flex flex-col space-y-6 relative z-20">
+            <h1 class="text-xl md:text-3xl md:font-bold max-w-[60%] md:max-w-[510px]">
               Supercharge your business with the all-powerfull
               <span class="text-sky-500">Payment Gateway</span>
             </h1>
@@ -400,7 +405,7 @@
                 <span> In-depth Reporting and Insights </span>
               </li>
             </ul>
-            <div class="flex gap-8">
+            <div class="flex gap-8 flex-col-reverse md:flex-row">
               <button
                 class="flex items-center text-white bg-sky-400 px-4 font-bold py-3 rounded-sm gap-2 hover:bg-sky-500"
               >
@@ -445,7 +450,7 @@
             </div>
           </div>
           <!-- image div right div -->
-          <div class="relative w-[370px] lg:w-[600px] h-full">
+          <div class="relative w-[370px] lg:w-[600px] h-full hidden md:block">
             <img
               class="right-0  top-[130px] lg:top-0 absolute -z-10 max-width-[300px] lg:max-w-[600px]"
               src="https://razorpay.com/build/browser/static/payment-suite.c8ef898b.png"
@@ -890,7 +895,7 @@
           </div>
         </div>
       </div>
-      <div class="mt-8 w-max-[1080px] lg:w-4/5 w-[95%] border border-sky-200 mx-auto rounded-xl bg-gradient-to-b from-sky-100 to-white py-3 flex items-center lg:justify-center gap-2 px-4 mb-[90px] lg:mb-0 ">
+      <div class="mt-8 w-max-[1080px] lg:w-4/5 w-[95%] border border-sky-200 mx-auto rounded-xl bg-gradient-to-b from-sky-100 to-white py-3 flex items-center lg:justify-center gap-2 px-4">
         <h3 class="font-semibold">Not sure which product to choose?</h3>
         <span class="font-normal opacity-60">Answer a few questions and we’ll help you out</span>
         <a
@@ -920,19 +925,80 @@
     </section>
 
     <!-- darkbg bigger section -->
-    <section class="bg-biggestDiv bg-no-repeat bg-cover pt-[15rem] relative z-10 pb-[30rem]">
+    <section class="bg-biggestDiv bg-no-repeat bg-cover mt-[-10%] md:mt-0 pt-[15rem] relative z-10 pb-[25rem] lg:pb-[30rem] bg-bottom overflow-hidden">
         
-      <div class="max-w-[1080px] lg:w-4/5 w-[95%] mx-auto text-white">
-        <h1 class="text-3xl text-center font-semibold">
+      <div class="max-w-[1080px] lg:w-4/5 w-[95%] mx-auto text-white ">
+        <h1 class="text-3xl text-center font-semibold hidden md:block">
           Explore RazorpayX powered Business Banking
         </h1>
         <hr
-          class="w-5 h-1 mx-auto bg-green-400 text-green-500 border-none text-center block mt-3 mb-[80px]"
+          class="w-5 h-1 mx-auto bg-green-400 text-green-500 border-none text-center mt-3 mb-[80px] hidden md:block"
         />
 
+        <!-- div for sm size -->
+        <div class="md:hidden relative">
+            <div class="flex flex-col gap-2 relative">
+              <img src="https://razorpay.com/build/browser/static/x-flame-1.56d9277e.png" alt="" class="w-[180px] scale-x-[-1] rotate-180 absolute -right-5 top-10 -z-40">
+              <h1 class="text-[2.5rem] font-bold">Explore</h1>
+              <img src="https://razorpay.com/build/browser/static/razorpay-x-logo.5cf8015e.svg" alt="" srcset="" class="max-w-[200px]">
+              <span class="text-[2.5rem] font-semibold text-green-400 leading-9">
+                Business <br>Banking
+              </span>
+              <hr class="bg-green-400 w-8 h-1 border-none">
+              <!-- card div -->
+              <div class="relative">
+                <div class="absolute right-0 top-0 bg-gradient-to-r from-[#171b2c] to-[#141723] pl-8 pr-2 pt-4 pb-10 -z-20">
+                  <img class="w-[48px] bg-sky-500 rounded-full" src="https://razorpay.com/build/browser/static/x.b892a7d0.svg" alt="" srcset="">
+                </div>
+                <svg class="absolute -z-10 w-[300px] h-[250px] right-0 top-0" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 338.66668701171875 225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="100%">
+                  <path d="m 0 6 &#xA;              a 6 6 0 0 1 6 -6 &#xA;              h 239.66668701171875 &#xA;              a 16 16 0 0 1 11 5 &#xA;              l 77 77 &#xA;              a 16 16 0 0 1 5 11 &#xA;              v 126 &#xA;              a 6 6 0 0 1 -6 6 &#xA;              h -326.66668701171875 &#xA;              a 6 6 0 0 1 -6 -6 &#xA;              z" fill="#181C2E" stroke="#C4DDF9" stroke-opacity="0"/>
+                </svg>
+                <div class="flex flex-col space-y-4 p-10">
+                  <h1 class="text-2xl font-bold">Open and operate
+                    fully‑functional Current Accounts on RazorpayXl</h1>
+                  <ul class="flex flex-col gap-0.5">
+                    <li class="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-green-500"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span> Business Banking for disruptors </span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-green-500"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span> All standard banking features </span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-green-500"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span> Tech capabilities like API Banking </span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-green-500"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span> Insightful Reports </span>
+                    </li>
+                    <li class="flex items-center gap-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check text-green-500"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span> Multiple Payout flow options </span>
+                    </li>
+                  </ul>
+                  <a href="" class="flex items-center text-sky-500 font-semibold">
+                    <span>Know More</span>
+                    <div class="-rotate-90 pr-1">
+                      <svg class="" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false" width="16" height="16">
+                        <path class="" fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
+                      </svg>
+                    </div>
+                  </a>
+                  <button class="flex items-center text-base justify-center text-white bg-sky-400 pl-5 pr-[6rem] font-bold py-3 rounded-sm gap-2 hover:bg-sky-500 relative">
+                    Sign Up
+                    <div class="w-[50px] h-[55px] bg-green-300 absolute right-[30%] md:right-[42%] skew-x-[21deg] flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right -skew-x-[21deg] w-5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
         <!-- inner plans div -->
         <div
-          class="flex border border-gray-600 rounded-md w-full mx-auto max-h-[550px] min-h-[400px] pl-10 pt-10 mt-15 bg-bg2 relative"
+          class="md:flex hidden border border-gray-600 rounded-md w-full mx-auto max-h-[550px] min-h-[400px] pl-10 pt-10 mt-15 bg-bg2 relative"
         >
         <img
           class="absolute -left-[145px] -top-[145px] max-w-[200px] -z-10"
@@ -1014,7 +1080,7 @@
            >
           </div>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 mx-auto gap-6 align-baseline mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-6 align-baseline mt-10">
           <!-- card 1 -->
           <div class="relative group hover:cursor-pointer min-w-[270px]">
             <img
@@ -1233,7 +1299,7 @@
           </div>
         </div>
         
-        <div class="mt-8 border border-gray-700 mx-auto rounded-xl py-7 flex items-center justify-center gap-2 px-2">
+        <div class="hidden mt-8 border border-gray-700 mx-auto rounded-xl py-7 lg:flex items-center justify-center gap-2 px-2">
           <h3 class="text-xl">Check out the live demo to learn how RazorpayX works. <span class="text-xl font-semibold">No sign-up required!</span></h3>
           <button class="whitespace-nowrap flex items-center text-base text-white bg-sky-400 pl-5 pr-[6rem] font-bold py-3 rounded-sm gap-2 hover:bg-sky-500 relative ml-6">
             Check out the demo
@@ -1246,7 +1312,7 @@
     </section>
 
     <!-- box 2 section -->
-    <section>
+    <section class="mt-[-250px] md:mt-0">
       <div class="lg:w-4/5 w-[95%] max-w-[1080px] mx-auto">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           <!-- intro card -->
@@ -1256,7 +1322,7 @@
             </h1>
           </div>
           <!-- card 2-->
-          <div class="space-y-4 p-10 min-h-[300px] rounded-md shadow-xl relative overflow-hidden group hover:cursor-pointer hover:scale-105">
+          <div class="space-y-4 p-4 mx-5 md:mx-0 md:min-h-[300px] rounded-md shadow-xl relative overflow-hidden group hover:cursor-pointer hover:scale-105">
             <svg class="absolute top-2 left-0 group-hover:fill-sky-100 -z-10 group-hover:scale-y-125"
             xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="318" height="305" fill="none"><mask id="a" maskUnits="userSpaceOnUse" x="0" y="0" width="318" height="305"><rect opacity=".5" width="318" height="305" rx="6" fill="#fff"></rect></mask><g mask="url(#a)" stroke="#C4DDF9">
               <path d="M-35.41 31.05h0a5.43 5.43 0 01-.9-9.26h.01L93.21-80.28h0c4.6-3.64 10.93 1.47 8.38 6.71h0L59.33 14.27l-.21.45.45.22 5.43 2.58h0l28.51 13.73h0l36.8 17.7h.01a5.5 5.5 0 011.02 9.27h0L1.77 160.27h0c-4.6 3.64-10.93-1.47-8.37-6.71h0l42.24-87.83.22-.45-.46-.22-5.43-2.58h0L-.7 47.71h0l-34.72-16.66z"></path>
@@ -1274,7 +1340,7 @@
             </a>
           </div>
           <!-- card 3-->
-          <div class="space-y-4 p-10 min-h-[300px] rounded-md shadow-xl relative overflow-hidden group hover:cursor-pointer hover:scale-105">
+          <div class="space-y-4 p-4 mx-5 md:mx-0 md:min-h-[300px] rounded-md shadow-xl relative overflow-hidden group hover:cursor-pointer hover:scale-105">
             <svg class="absolute top-2 left-0 group-hover:fill-sky-100 -z-10 group-hover:scale-y-125"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="222" height="115" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".5" d="M111.4 33.4L94.9 51.7 57.3 93.6 1 68.7V1h91.6l18.8 32.4z" stroke="#C4DDF9"></path><path opacity=".5" d="M220.7 1l-68.4 76.2-39.2-17.4-18.2-8.1-77.2-34.2L19.4 1h201.3z" stroke="#C4DDF9"></path><path opacity=".5" d="M138.3 16.6l-25.2 43.2L81.6 114 1 96.6V1h123.3l14 15.6z" stroke="#C4DDF9"></path></svg>
             <img src="https://razorpay.com/build/browser/static/upi-autopay.df1cd0fd.svg" class="bg-sky-500 rounded-full w-[45px]" alt="" srcset="">
@@ -1290,7 +1356,7 @@
             </a>
           </div>
           <!-- card 4-->
-          <div class="space-y-4 p-10 min-h-[300px] rounded-md shadow-xl relative overflow-hidden group hover:cursor-pointer hover:scale-105">
+          <div class="space-y-4 p-4 mx-5 md:mx-0 md:min-h-[300px] rounded-md shadow-xl relative overflow-hidden group hover:cursor-pointer hover:scale-105">
             <!-- class="absolute top-2 left-0 group-hover:fill-sky-100 -z-10 group-hover:scale-y-125" -->
             <svg class="absolute top-2 left-0 group-hover:fill-sky-100 -z-10 group-hover:scale-y-125"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="214" height="94" fill="none" xmlns="http://www.w3.org/2000/svg"><style>path {stroke: #C4DDF9}</style><path opacity=".4" d="M27.5 18.5h113c3 0 5.5 2.5 5.5 5.5v59c0 3-2.5 5.5-5.5 5.5h-113c-3 0-5.5-2.5-5.5-5.5V24c0-3 2.5-5.5 5.5-5.5z"></path><path opacity=".4" d="M6.5 1.5h43C52.5 1.5 55 4 55 7v81c0 3-2.5 5.5-5.5 5.5h-43C3.5 93.5 1 91 1 88V7c0-3 2.5-5.5 5.5-5.5z"></path><path opacity=".4" d="M213 1v23c0 3-2.5 5.5-5.5 5.5h-38c-3 0-5.5-2.5-5.5-5.5V1h49z"></path><path opacity=".4" d="M190 1v66c0 3-2.5 5.5-5.5 5.5h-136c-3 0-5.5-2.5-5.5-5.5V1h147z"></path></svg>
@@ -1307,23 +1373,23 @@
             </a>
           </div>
           <!-- card 5-->
-          <div class="space-y-4 p-10 min-h-[300px] rounded-md shadow-xl relative overflow-hidden group hover:cursor-pointer hover:scale-105">
+          <div class="space-y-4 p-10 md:min-h-[300px] rounded-md shadow-xl relative overflow-hidden group hover:cursor-pointer hover:scale-105 mx-5 md:mx-0">
             <svg class="absolute top-2 left-0 group-hover:fill-sky-100 -z-10 group-hover:scale-y-125"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="201" height="85" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity=".5" d="M190.8-.5l-3.1 7.8-30 74.6-47.9-20L.5 16.4V-.5h190.3z" stroke="#C4DDF9"></path><path opacity=".5" d="M198.8-.5l-11.1 7.8-77.9 54.6L79 83.5.5 28.7V2.5l67.6-3h130.7z" stroke="#C4DDF9"></path></svg>
             <img src="https://razorpay.com/build/browser/static/qr-mc-code.aec73db1.svg" class="bg-sky-500 rounded-full w-[45px]" alt="" srcset="">
             <h1 class="text-xl font-semibold">QR Codes</h1>
             <p class="opacity-50">Create unlimited QR codes with business branding and start accepting payments for free*.</p>
-            <a href="" class="flex items-center text-sky-500 font-semibold">
+            <a href="" class="flex items-center text-sky-500 font-semibold ">
               <span>Know More</span>
               <div class="-rotate-90 pr-1">
                 <svg class="" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" focusable="false" width="16" height="16">
                   <path class="" fill="currentColor" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"></path>
                 </svg>
               </div>
-            </a>
+         </a>
           </div>
           <!-- card 6-->
-          <div class="space-y-4 p-10 min-h-[300px] rounded-md shadow-xl relative overflow-hidden group hover:cursor-pointer hover:scale-105">
+          <div class="space-y-4 p-10 md:min-h-[300px] rounded-md shadow-xl relative overflow-hidden group hover:cursor-pointer hover:scale-105 mx-5 md:mx-0">
             <svg class="absolute top-0 left-0 group-hover:fill-sky-100 -z-10 scale-y-125"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="237" height="88" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 79.5v3.3c1.3.4 2.5.8 3.7 1.2 21.1 6.2 37.9 1 51.3-11.2 1.2-1.1 2.4-2.3 3.6-3.5C74.7 53.3 84.9 28.1 91.5 1" stroke-opacity="0.5" stroke="#C4DDF9"></path><path d="M1 79.5c20.5-12.2 39.8-13.1 58.6-10.2 10.2 1.5 20.3 4.1 30.4 6.6C134.1 86.7 178.5 95.2 235.2 1H91.5" stroke-opacity="0.5" stroke="#C4DDF9"></path><path d="M91.5 1h108.4C169 76.8 129.8 79.5 90 75.8c-11.3-1-22.7-2.6-34-3.1-17.7-.8-35 .9-51.3 11.2-1.2.8-2.5 1.7-3.7 2.6v-7" stroke-opacity="0.5" stroke="#C4DDF9"></path></svg>
             <img src="https://razorpay.com/build/browser/static/supercheckout-comp.49cd2f79.svg" class="bg-sky-500 rounded-full w-[45px]" alt="" srcset="">
@@ -1344,52 +1410,52 @@
 
     <!-- features section -->
 
-    <section class="relative z-20 bg-[url('https://razorpay.com/build/browser/static/features-bg.61935438.svg')] bg-no-repeat bg-cover pt-[200px] text-white md:bg-cover">
+    <section class="relative z-20 bg-[url('https://razorpay.com/build/browser/static/features-bg.61935438.svg')] bg-no-repeat bg-cover pt-[220px] text-white bg-bottom lg:bg-left mt-[-150px] md:mt-0">
       <div class="max-w-[1080px] lg:w-4/5 w-[95%] mx-auto pb-[150px]">
-        <h1 class="text-3xl lg:text-center font-semibold">
+        <h1 class="text-3xl lg:text-center font-semibold ">
           Features
         </h1>
-        <hr class="w-5 h-1 mx-auto bg-green-400 text-green-500 border-none text-center block mt-3 mb-5">
-        <p class="leading-6 mx-auto pb-5 max-w-[450px] text-[1rem] text-center">Empower your business with all the right tools to accept online payments and provide the best customer experience</p>
+        <hr class=" w-5 h-1 lg:mx-auto bg-green-400 text-green-500 border-none text-center block mt-3 mb-5">
+        <p class=" leading-6 lg:mx-auto pb-5 lg:max-w-[450px] text-[1rem] lg:text-center">Empower your business with all the right tools to accept online payments and provide the best customer experience</p>
 
         <!-- all boxes -->
         <div class="grid md:grid-cols-1 lg:grid-cols-4">
-          <div class="space-y-4 p-10 min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
+          <div class="space-y-4 px-10 py-4 lg:min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
             <img src="https://razorpay.com/build/browser/static/instant-activation.6f975aa6.svg" class="w-[44px]" alt="" srcset="">
             <h1 class="text-xl font-semibold">Instant Activation</h1>
             <p>Get activated and transact within 2 minutes. Completely online onboarding with minimum documentation.</p>
           </div>
-          <div class="space-y-4 p-10 min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
+          <div class="space-y-4 px-10 py-4 lg:min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
             <img src="https://razorpay.com/build/browser/static/easy-integration.18651e2f.svg" class="w-[44px]" alt="" srcset="">
             <h1 class="text-xl font-semibold">Easy Integration</h1>
             <p>With plugins for all major platforms and languages, integrate and go live with Razorpay in less than an hour.</p>
           </div>
-          <div class="space-y-4 p-10 min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
+          <div class="space-y-4 px-10 py-4 lg:min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
             <img src="https://razorpay.com/build/browser/static/api-driven.207572da.svg" class="w-[44px]" alt="" srcset="">
             <h1 class="text-xl font-semibold">API Driven</h1>
             <p>Build your business for scale with our complete API-driven automation that requires zero manual intervention.</p>
           </div>
-          <div class="space-y-4 p-10 min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
+          <div class="space-y-4 px-10 py-4 lg:min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
             <img src="https://razorpay.com/build/browser/static/payment-modes.da25e039.svg" class="w-[44px]" alt="" srcset="">
             <h1 class="text-xl font-semibold">100+ payment modes</h1>
             <p>Offer your customers the luxury of all payment modes including Credit/Debit cards, Netbanking, UPI, Wallets etc.</p>
           </div>
-          <div class="space-y-4 p-10 min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
+          <div class="space-y-4 px-10 py-4 lg:min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
             <img src="https://razorpay.com/build/browser/static/simple-pricing.dc58cdbb.svg" class="w-[44px]" alt="" srcset="">
             <h1 class="text-xl font-semibold">Simple Pricing</h1>
             <p>Our innovative payment solutions with competitive pricing make payments simpler.</p>
           </div>
-          <div class="space-y-4 p-10 min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
+          <div class="space-y-4 px-10 py-4 lg:min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
             <img src="https://razorpay.com/build/browser/static/support.714ccbce.svg" class="w-[44px]" alt="" srcset="">
             <h1 class="text-xl font-semibold">Best in Industry Support</h1>
             <p>Always available email, phone and chat based support to help you in your every step.</p>
           </div>
-          <div class="space-y-4 p-10 min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
+          <div class="space-y-4 px-10 py-4 lg:min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
             <img src="https://razorpay.com/build/browser/static/dashboard-reporting.15590378.svg" class="w-[44px]" alt="" srcset="">
             <h1 class="text-xl font-semibold">Dashboard Reporting</h1>
             <p>Real-time data and insights on your Razorpay Dashboard to make informed business decisions.</p>
           </div>
-          <div class="space-y-4 p-10 min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
+          <div class="space-y-4 px-10 py-4 lg:min-h-[236.6px] lg:max-w-[360px] min-w-[276px]">
             <img src="https://razorpay.com/build/browser/static/secure.742a33ac.svg" class="w-[44px]" alt="" srcset="">
             <h1 class="text-xl font-semibold">Secure</h1>
             <p>PCI DSS Level 1 compliant solution which removes your burden of regulatory compliance.</p>
@@ -1401,11 +1467,11 @@
 
     <!-- image animation section -->
 
-    <section class="max-h-[700px] bg-[#f5f8fe] relative">
-      <div class="bg-[#f5f8fe] w-full h-[150px] absolute -top-[110px]"></div>
-      <div class="max-w-[1080px] lg:w-4/5 w-[95%] flex items-center mx-auto ">
+    <section class="md:max-h-[700px] bg-[#f5f8fe] relative">
+      <div class="bg-[#f5f8fe] w-full h-[150px] absolute -top-[150px] md:-top-[110px]"></div>
+      <div class="max-w-[1080px] lg:w-4/5 w-[95%] flex flex-col md:flex-row md:items-center mx-auto space-y-5 lg:space-y-0">
         <!-- left div -->
-        <div class="max-w-[calc(100%-450px)] space-y-6">
+        <div class="mx:max-w-[calc(100%-450px)] md:min-w-[450px] space-y-6">
           <h2 class="text-2xl font-bold mb-[-15px]">Join the 50,00,000 businesses using Razorpay</h2>
         <hr class="h-1 w-7 bg-green-500 border-0">
         <p class="max-w-[600px]">We make it easier for you to focus on building great products while we work on simplifying your payments. Become one of us by joining thousands of our happy users and simplify the online payment experience for your customers.</p>
@@ -1413,7 +1479,7 @@
         <button class="text-white bg-sky-500 rounded-md flex gap-1 items-center px-5 py-3 font-semibold hover:bg-sky-600">Get Started <i data-feather="arrow-right" class="w-[15px]"></i></button>
         </div>
         <!-- right div -->
-        <div class="max-w-[600px] w-[480px] max-h-[500px] h-[491px] overflow-y-hidden relative z-10">
+        <div class="max-w-[600px] md:w-[480px] max-h-[500px] h-[491px] overflow-y-hidden relative z-10">
           <div class="absolute w-full h-[30%] z-30 bg-gradient-to-b from-[#f5f8fe]"></div>
           
           <img src="https://razorpay.com/build/browser/static/merchants.204d7741.png"
@@ -1432,27 +1498,32 @@
         <h1 class="text-[1.6rem] text-center font-semibold leading-8">
           An Experience <br/>People Love to Talk About 
         </h1>
-        <hr class="w-6 h-1 mx-auto bg-green-400 text-green-500 border-none text-center mt-3 mb-[65px]">
-        <div class="flex items-center justify-center gap-20 relative w-full">
-          <img class="w-[200px] h-[143.35px] absolute -top-[130px] -left-5 -z-20" src="https://razorpay.com/build/browser/static/dots-with-cut.bde9e78f.png" alt="" srcset="">
+        <hr class="w-6 h-1 mx-auto bg-green-400 text-green-500 border-none text-center mt-3 mb-8 lg:mb-[65px]">
+        <div class="flex items-center flex-col lg:flex-row justify-center gap-6 lg:gap-20 relative w-full">
+          <img class="w-[200px] h-[143.35px] hidden lg:absolute -top-[130px] -left-5 -z-20" src="https://razorpay.com/build/browser/static/dots-with-cut.bde9e78f.png" alt="" srcset="">
           <!-- left div -->
-          <div class="max-w-[320px]">
+          <div class="lg:max-w-[320px] max-w-[250px]">
             <img src="https://razorpay.com/build/browser/static/subham.042b5094.png" alt="" srcset="">
           </div>
           <!-- right div -->
-          <div class="px-8">
-            <svg class="w-10"
+          <div class="flex flex-col">
+            <div class="order-2">
+              <svg class="w-10 "
             xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="108" height="90" viewBox="0 0 108 90"><path fill="#515978" fill-rule="evenodd" d="M47.32 47.35V0H0v30.59c0 11.37 2.03 21.66 6.1 30.88C10.16 70.7 16.94 80.2 26.42 90l17.13-13.82c-9.68-10-15.58-19.61-17.71-28.83h21.48zm60.68 0V0H60.68v30.59c0 11.37 2.03 21.66 6.1 30.88C70.83 70.7 77.6 80.2 87.1 90l17.13-13.82c-9.68-10-15.58-19.61-17.71-28.83H108z" opacity=".12"></path></svg>
-            <h2 class="text-3xl leading-10 font-light max-w-[420px] mt-[-32px]">
+            <h2 class="md:order-4 text-3xl leading-10 font-light max-w-[420px] lg:mt-[-35px]">
               Acquire Customers From New Customer Segments
             </h2>
-            <a href="" class="italic border-b border-b-black opacity-70">Learn More</a>
-            <h3 class="font-bold text-2xl">Subham Kumar</h3>
-            <p class="font-semibold opacity-80 mb-3">Product Manager</p>
-            <img class="w-[213px]" 
-            src="https://razorpay.com/build/browser/static/unacademy.1c618f03.svg" alt="" srcset="">
+            <a href="" class="italic border-b border-b-black opacity-70 w-fit">Learn More</a>
+            </div>
+            <div class="lg:order-2 self-center lg:self-start lg:text-left text-center">
+              <h3 class="font-bold text-2xl ">Subham Kumar</h3>
+              <p class="font-semibold opacity-80 mb-3 ">Product Manager</p>
+              <img class="w-[213px] lg:order-6" 
+              src="https://razorpay.com/build/browser/static/unacademy.1c618f03.svg" alt="" srcset="">
+            </div>
+        
           </div>
-          <div class="absolute -right-[5%] w-[96px] h-[96px] rounded-full bg-[#fbfdff]">
+          <div class="absolute right-0 lg:-right-[5%] w-[55px] lg:w-[96px] lg:h-[96px] rounded-full bg-[#fbfdff]">
             <svg viewBox="0 0 96 96" focusable="false" class="chakra-icon css-1dluisi"><circle cx="48" cy="48" r="48" fill="#F4F8FF" fill-opacity="0.7"></circle><g style="mix-blend-mode: multiply;"><circle cx="48.0004" cy="48.0002" r="33.1034" fill="#F4F8FF" fill-opacity="0.7"></circle></g><g opacity="0.5"><g style="mix-blend-mode: multiply;"><rect x="43.6523" y="33.1033" width="20.6022" height="7.89307" rx="2" transform="rotate(45.0165 43.6523 33.1033)" fill="#28365E"></rect></g><rect x="38.0713" y="56.6262" width="20.6022" height="7.89307" rx="2" transform="rotate(-44.6979 38.0713 56.6262)" fill="#102562"></rect></g></svg>
           </div>
         </div>
@@ -1473,7 +1544,7 @@
     <!-- footer features section -->
     <section class="relative z-50 pb-[150px]">
       <!-- bg-div -->
-      <div class="bg-[url('https://razorpay.com/build/browser/static/footer-head-bg.990e26df.svg')] bg-no-repeat bg-cover w-full h-full absolute z-30"></div>
+      <div class="bg-[url('https://razorpay.com/build/browser/static/footer-head-bg.990e26df.svg')] bg-no-repeat bg-cover w-full h-full absolute z-30" ></div>
 
       <div class="max-w-[1080px] lg:w-4/5 w-[95%] flex items-center mx-auto text-white justify-between pt-[120px] relative z-40">
         <!-- left div -->
@@ -1481,7 +1552,7 @@
           <h2 class="text-2xl font-bold mb-[-15px]">Supercharge your business with Razorpay</h2>
         <hr class="h-1 w-7 bg-green-500 border-0">
         <p class="max-w-[440px]">Sign up now to experience the future of payments and offer your customers the best checkout experience.</p>
-        <div class="flex gap-4 flex-wrap w-[600px]">
+        <div class="flex gap-4 flex-wrap md:w-[600px]">
           <div class="flex gap-4">
             <i data-feather="check" class="w-5 text-green-500"></i>
             <p>Quick onboarding</p>
@@ -1502,16 +1573,16 @@
         <button class="text-sky-500 bg-white rounded-sm flex gap-1 items-center px-5 py-3 font-semibold hover:text-sky-600">Sign Up Now<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right w-[15px]"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></button>
         </div>
         <!-- right div -->
-        <img src="https://razorpay.com/build/browser/static/footer-signup.6bf7413f.svg" width="240px" class="pt-20" alt="" srcset="">
+        <img src="https://razorpay.com/build/browser/static/footer-signup.6bf7413f.svg" width="240px" class="pt-20 hidden lg:block" alt="" srcset="">
       </div>
     </section>
 
     <!-- footer -->
-    <footer class="bg-[#eef9fe] relative z-20 pt-[200px] mt-[-230px] pb-10">
-      <div class="max-w-[1080px] lg:w-4/5 w-[95%] flex items-baseline mx-auto text-white justify-between relative gap-5">
+    <footer class="bg-[#eef9fe] relative z-20 pt-[32%] mt-[-32%] pb-10">
+      <div class="max-w-[1080px] lg:w-4/5 w-[95%] flex items-baseline mx-auto text-white  lg:justify-between relative space-x-10 lg:space-x-0 gap-5 flex-wrap">
           
         <!-- first div -->
-        <div class="flex flex-col gap-3 text-[#525a76] max-w-[248px]">
+        <div class="flex flex-col gap-3 text-[#525a76] w-full lg:max-w-[248px] lg:pr-0 pr-[30%] md:pr-[65%]">
           <div>
             <img src="https://razorpay.com/build/browser/static/razorpay-logo.5cdb58df.svg" class="max-w-[120px]" alt="" srcset="">
           </div>
